@@ -1,0 +1,158 @@
+/* -------------------------------------------------------------------------- */
+/*                                    INDEX                                   */
+/* -------------------------------------------------------------------------- */
+
+.botonComenzar {
+    background-color: #ded71b;
+    margin: 10px 40px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               MENU PRINCIPAL                               */
+/* -------------------------------------------------------------------------- */
+
+.portada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.img3d{
+    width: 40%;
+    padding: 3rem;
+    animation: float 6s ease-in-out infinite;
+	img { width: 25%; height: auto; }
+}
+
+:root {
+    --offset: 6px;
+  }
+  
+  
+.text-animate{
+    padding: 3rem ;
+    width: 980px;
+    font-size: 60px;
+    font-family: Helvetica;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+  
+  .mask {
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+
+    span {
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      top: 100px;
+      padding-bottom: var(--offset);
+      
+      background-size: 100% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+    }
+
+    span[data-show] {
+      transform: translateY(-100%);
+      transition: .5s transform ease-in-out;
+    }
+
+    span[data-up] {
+      transform: translateY(-200%);
+      transition: .5s transform ease-in-out;
+    }
+
+    span:nth-child(1) {
+      background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+    }
+    span:nth-child(2) {
+      background-image: linear-gradient(45deg, #ffdd00 50%, #fbb034);
+    }
+    span:nth-child(3) {
+      background-image: linear-gradient(45deg, #de4daa 50%, #f6d327);
+    }
+    
+  span:nth-child(4) {
+      background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+    }
+  }
+  
+
+
+  
+
+  
+
+
+
+
+  @media (max-width: 576px){
+    .portada{
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
+
+    }
+    .img3d{
+      width: 90%;
+     
+    }
+    .text-animate{
+      padding: 1rem;
+      width: 100%;
+      font-size: 60px;
+    
+    }
+
+    .mask {
+  
+
+      span{
+        top: 100px;
+        padding-bottom: 30px;
+      
+      }
+
+    }
+
+  }
+
+
+  @media (max-width: 768px){
+
+    .text-animate{
+      padding: 2rem;
+      width: 100%;
+      font-size: 50px;
+    }
+    .mask {
+
+      span{
+        top: 100px;
+        padding-bottom: 30px;
+        
+      
+      }
+
+    }
+
+    .img3d{
+      width: 50%;
+     
+    }
+
+    
+
+  }

@@ -1,0 +1,345 @@
+/* -------------------------------------------------------------------------- */
+/*                                   RESETEO                                  */
+/* -------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+
+/* -------------------------------------------------------------------------- */
+/*                              PUNTO DE CONTROL                              */
+/* -------------------------------------------------------------------------- */
+nav {
+  height: 80px;
+  width: 100%; }
+  nav a img {
+    width: 3rem; }
+  nav ul {
+    float: right;
+    margin-right: 20px; }
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px; }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase; }
+      nav ul li .active, nav ul li :hover {
+        background-color: springgreen;
+        transition: .5s; }
+
+.icon {
+  color: white; }
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px; }
+
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px; }
+  nav ul li a {
+    font-size: 16px; } }
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block; }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #20c997;
+    top: 80px;
+    left: -200%;
+    text-align: center;
+    transition: all .5s; }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px; }
+      nav ul li a {
+        font-size: 20px; }
+        nav ul li a :hover, nav ul li a :active {
+          background: none;
+          color: black; }
+  #check:checked ~ ul {
+    left: 0; } }
+
+.rrss {
+  width: 2rem;
+  position: relative;
+  margin-right: 0; }
+
+footer {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  align-content: center;
+  margin: 10px;
+  align-items: center;
+  text-decoration: none; }
+
+.descripcion {
+  margin-left: 10px; }
+
+/* -------------------------------------------------------------------------- */
+/*                                    INDEX                                   */
+/* -------------------------------------------------------------------------- */
+.botonComenzar {
+  background-color: #ded71b;
+  margin: 10px 40px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border-style: none; }
+
+/* -------------------------------------------------------------------------- */
+/*                               MENU PRINCIPAL                               */
+/* -------------------------------------------------------------------------- */
+.portada {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center; }
+
+.img3d {
+  width: 40%;
+  padding: 3rem;
+  animation: float 6s ease-in-out infinite; }
+  .img3d img {
+    width: 25%;
+    height: auto; }
+
+:root {
+  --offset: 6px; }
+
+.text-animate {
+  padding: 3rem;
+  width: 980px;
+  font-size: 60px;
+  font-family: Helvetica;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: white; }
+
+.mask {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--offset); }
+  .mask span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    padding-bottom: var(--offset);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat; }
+  .mask span[data-show] {
+    transform: translateY(-100%);
+    transition: .5s transform ease-in-out; }
+  .mask span[data-up] {
+    transform: translateY(-200%);
+    transition: .5s transform ease-in-out; }
+  .mask span:nth-child(1) {
+    background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1); }
+  .mask span:nth-child(2) {
+    background-image: linear-gradient(45deg, #ffdd00 50%, #fbb034); }
+  .mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #de4daa 50%, #f6d327); }
+  .mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f); }
+
+@media (max-width: 576px) {
+  .portada {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+  .img3d {
+    width: 90%; }
+  .text-animate {
+    padding: 1rem;
+    width: 100%;
+    font-size: 60px; }
+  .mask span {
+    top: 100px;
+    padding-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  .text-animate {
+    padding: 2rem;
+    width: 100%;
+    font-size: 50px; }
+  .mask span {
+    top: 100px;
+    padding-bottom: 30px; }
+  .img3d {
+    width: 50%; } }
+
+/* -------------------------------------------------------------------------- */
+/*                                    TRAKK                                   */
+/* -------------------------------------------------------------------------- */
+/* Plataformas dimensionales */
+@keyframes float {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-20px); }
+  100% {
+    transform: translatey(0px); } }
+
+.dimension {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite; }
+  .dimension img {
+    width: 25%;
+    height: auto; }
+
+/* Sobre Trakk */
+.sobreTrakk {
+  display: flex;
+  flex-direction: column; }
+  .sobreTrakk h1 {
+    color: white;
+    text-decoration: solid;
+    margin: 1rem;
+    text-align: center; }
+  .sobreTrakk h4 {
+    margin: 2rem;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal; }
+
+/* Titulo HALLAZGOS */
+.baseHallazgos {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+/* Hallazgos */
+.hallazgos {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-shrink: 1; }
+
+.mitos {
+  width: 1rem; }
+
+/* -------------------------------------------------------------------------- */
+/*                                 TRAYECTORIA                                */
+/* -------------------------------------------------------------------------- */
+.prototipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+#galeria .containerGaleria .fotos ul li img {
+  width: 10%; }
+
+/* -------------------------------------------------------------------------- */
+/*                                   EQUIPO                                   */
+/* -------------------------------------------------------------------------- */
+#equipo {
+  width: 100%; }
+  #equipo .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #equipo .cards .card {
+      width: 22rem;
+      text-align: center; }
+      #equipo .cards .card img {
+        width: 20rem; }
+      #equipo .cards .card .cardTexto h3 {
+        font-size: larger; }
+      #equipo .cards .card .cardTexto h4 {
+        font-size: larger;
+        text-align: center; }
+      #equipo .cards .card .cardRRSS a img {
+        width: 2rem; }
+
+.tituloE {
+  text-align: center;
+  align-content: center; }
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.formulario {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+/* -------------------------------------------------------------------------- */
+/*                                   TEXTOS                                   */
+/* -------------------------------------------------------------------------- */
+/* TIPO DE TEXTO */
+.textoNormal {
+  font-style: normal; }
+
+.textoGrueso {
+  font-style: bold; }
+
+.mayuscula {
+  text-transform: uppercase; }
+
+/* Posicionamiento */
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.textLeft {
+  text-align: left; }
+
+/* FUENTES*/
+.montserrat {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  color: white; }
+
+h2 {
+  color: white; }
+
+h3 {
+  color: white; }
+
+h4 {
+  color: white; }
+
+h5 {
+  color: white; }
+
+h6 {
+  color: white; }

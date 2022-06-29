@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------------------- */
+/*                                   EQUIPO                                   */
+/* -------------------------------------------------------------------------- */
+
+#equipo{
+    width: 100%;
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .card{
+            width: 22rem;
+            text-align: center;
+            img{
+                width: 20rem;
+
+            }
+            .cardTexto{
+                h3{
+                    font-size: larger;
+
+                }
+                h4{
+                    font-size: larger;
+                    text-align: center;
+
+                }
+            }
+            .cardRRSS{
+                a{
+                    img{
+                        width: 2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tituloE{
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,47 @@
+
+DATOS GENERALES:
+
+Color semana i : #E73C29
+
+Colores Trakk:
+https://coolors.co/f9c74f-3acf94-000000 (Verde - Amarillo - Negro)
+
+
+
+
+----------  RESOLVER  ----------
+
+Mobile First ---------------------------
+1. Resolver este tema
+
+Index.html -------------------------
+
+TODO OK
+
+trakk.html -------------------------
+
+
+1. Imagen app 3d se distorsiona al  achicar la pantalla. Para celular queremos que se mantenga y que el texto lateral baje.
+2. Prototipos un texto si baja y el otro no, como lo resuelvo?
+3. distancia entre video caso y prototipos????
+
+
+trayectoria.html -------------------------
+
+1. Agregar Videocasos y pitchs
+2. Podemos hacer que la imagen al hacer click se agrande?
+
+equipo.html -------------------------
+
+1. Iconos linkedin e instagram no se ponen de lado a lado
+
+contacto.html -------------------------
+
+
+1. Para más adelante Google Sheets como base de datos
+https://www.youtube.com/watch?v=Barr2qKc82w&ab_channel=FalconMasters
+
+
+
+
+MÁS ADELANTE -------

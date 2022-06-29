@@ -1,0 +1,24 @@
+/* -------------------------------------------------------------------------- */
+/*                                 TRAYECTORIA                                */
+/* -------------------------------------------------------------------------- */
+
+.prototipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#galeria{
+    .containerGaleria{
+        .fotos{
+            ul{
+                li{
+                    img{
+                        width: 10%;
+                    }
+                }
+            }
+
+        }
+    }
+}

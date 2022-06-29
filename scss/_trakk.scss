@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------------------- */
+/*                                    TRAKK                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Plataformas dimensionales */
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+.dimension {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 25%; height: auto; }
+    
+}
+
+
+/* Sobre Trakk */
+
+.sobreTrakk{
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: white;
+        text-decoration: solid;
+        margin: 1rem;
+        text-align: center;
+    }
+    h4{
+        margin: 2rem;
+        font-size: 30px;
+        text-align: center;
+        font-style: normal;
+    }
+}
+
+/* Titulo HALLAZGOS */
+
+.baseHallazgos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Hallazgos */
+
+.hallazgos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-shrink: 1;
+}
+
+.mitos{
+    width: 1rem;
+}
+
+
